@@ -19,4 +19,5 @@ export default defineConfig({
     },
   },
   plugins: [react()],
+  base: '/results-summary-component/',
 });
