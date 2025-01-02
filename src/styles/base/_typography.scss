@@ -1,0 +1,16 @@
+@use './functions';
+
+// Font family
+$font-family-hanken-grotesk: 'Hanken Grotesk';
+
+// Font sizes
+$font-size-default-mobile: functions.toRem(16);
+$font-size-default-desktop: functions.toRem(18);
+$font-size-medium: functions.toRem(18);
+$font-size-large: functions.toRem(24);
+$font-size-extra-large: functions.toRem(32);
+
+// Font weights
+$font-weight-medium: 500;
+$font-weight-semi-bold: 700;
+$font-weight-bold: 800;

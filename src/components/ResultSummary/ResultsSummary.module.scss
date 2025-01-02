@@ -1,0 +1,50 @@
+.results-summary {
+  @include respond-to('desktop') {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: toRem(736);
+    border-radius: toRem(32);
+    box-shadow: 0 30px 60px $drop-shadow-cobalt-blue;
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(24);
+    padding: toRem(24) toRem(58) toRem(40);
+    color: $color-light-lavender;
+    text-align: center;
+    background: $gradient-background;
+    border-radius: 0 0 toRem(32) toRem(32);
+
+    @include respond-to('desktop') {
+      padding: toRem(38) toRem(54) toRem(46);
+      width: 50%;
+      border-radius: toRem(32);
+    }
+  }
+
+  &__bold {
+    display: block;
+    margin-bottom: toRem(8);
+    font: {
+      size: $font-size-large;
+      weight: $font-weight-semi-bold;
+    }
+    color: $color-white;
+
+    @include respond-to('desktop') {
+      margin-bottom: toRem(14);
+      font-size: $font-size-extra-large;
+    }
+  }
+
+  &__summary {
+    @include respond-to('desktop') {
+      width: 50%;
+    }
+  }
+}

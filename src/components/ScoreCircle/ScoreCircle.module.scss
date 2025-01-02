@@ -1,0 +1,34 @@
+.score-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  width: toRem(140);
+  height: toRem(140);
+  font-weight: $font-weight-semi-bold;
+  background: $gradient-circle;
+  border-radius: 50%;
+
+  @include respond-to('desktop') {
+    width: toRem(200);
+    height: toRem(200);
+  }
+
+  &__score {
+    font: {
+      size: toRem(56);
+      weight: $font-weight-bold;
+    }
+    line-height: toRem(72);
+    color: $color-white;
+
+    @include respond-to('desktop') {
+      font-size: toRem(72);
+    }
+  }
+
+  &__full-score {
+    opacity: 51.68%;
+  }
+}

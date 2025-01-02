@@ -1,0 +1,38 @@
+.result-item {
+  display: flex;
+  align-items: center;
+  gap: toRem(12);
+  padding: toRem(16);
+  line-height: toRem(24);
+  border-radius: toRem(12);
+
+  &__red {
+    color: $color-light-red;
+    background-color: rgba($color-light-red, 0.05);
+  }
+
+  &__yellow {
+    color: $color-orangey-yellow;
+    background-color: rgba($color-orangey-yellow, 0.05);
+  }
+
+  &__green {
+    color: $color-green-teal;
+    background-color: rgba($color-green-teal, 0.05);
+  }
+
+  &__blue {
+    color: $color-cobalt-blue;
+    background-color: rgba($color-cobalt-blue, 0.05);
+  }
+
+  &__score {
+    margin-left: auto;
+    font-weight: $font-weight-bold;
+    color: rgba($color-dark-gray-blue, 0.5);
+
+    &-bold {
+      color: $color-dark-gray-blue;
+    }
+  }
+}

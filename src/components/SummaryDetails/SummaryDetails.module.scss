@@ -1,0 +1,23 @@
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(24);
+  padding: toRem(24) toRem(30) toRem(30);
+
+  @include respond-to('desktop') {
+    gap: toRem(28);
+    padding: toRem(38) toRem(40) toRem(46);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(16);
+    padding: 0;
+    list-style-type: none;
+
+    @include respond-to('desktop') {
+      margin-bottom: toRem(13);
+    }
+  }
+}

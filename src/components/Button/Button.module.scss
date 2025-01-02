@@ -1,0 +1,16 @@
+.button {
+  padding: toRem(16) toRem(40);
+  font: {
+    size: $font-size-medium;
+    weight: $font-weight-bold;
+  }
+  color: $color-white;
+  background-color: $color-dark-gray-blue;
+  border-radius: toRem(128);
+  border: 0;
+
+  &:hover {
+    background: $gradient-background;
+    cursor: pointer;
+  }
+}
