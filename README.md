@@ -29,6 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/patricijadelac/results-summary-component)
+- Live Site URL: [GitHub Pages](https://patricijadelac.github.io/results-summary-component/)
 
 ## Project setup
 
