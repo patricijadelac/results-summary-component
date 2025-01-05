@@ -26,11 +26,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <main>
       <ResultsSummary result={averageScore}>
         <SummaryDetails data={data} />
       </ResultsSummary>
-    </div>
+    </main>
   );
 }
 
