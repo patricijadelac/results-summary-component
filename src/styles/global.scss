@@ -1,9 +1,7 @@
 @use './reset';
 @use './lib';
-@use 'sass:map';
 
 body {
-  min-width: map.get($breakpoints, 'mobile');
   font: {
     family: $font-family-hanken-grotesk, Arial, sans-serif;
     size: $font-size-default-mobile;
