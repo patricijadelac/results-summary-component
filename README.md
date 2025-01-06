@@ -59,7 +59,7 @@ To get this project up and running locally, follow the steps below.
   npm run dev
 ```
 
-5. Open your browser and go to http://localhost:5173/ to view the project.
+5. Open your browser and go to http://localhost:5173/results-summary-component/ to view the project.
 
 ## Built with
 
