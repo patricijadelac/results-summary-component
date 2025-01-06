@@ -15,7 +15,13 @@ export default function ResultItem({
         styles[`resultItem__${backgroundColor}`]
       )}
     >
-      <img width={20} height={20} src={icon} aria-hidden="true" />
+      <img
+        src={icon}
+        alt={`Icon representing the ${category} category`}
+        width={20}
+        height={20}
+        aria-hidden="true"
+      />
       <p>{category}</p>
       <p className={styles.resultItem__score}>
         <span className={styles.resultItem__scoreBold}>{score}</span> / 100
