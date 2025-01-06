@@ -1,11 +1,8 @@
 .results-summary {
-  @include respond-to('desktop') {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: toRem(736);
+  @include respond-to('tablet') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: toRem(736);
     border-radius: toRem(32);
     box-shadow: 0 30px 60px $drop-shadow-cobalt-blue;
   }
@@ -20,10 +17,13 @@
     background: $gradient-background;
     border-radius: 0 0 toRem(32) toRem(32);
 
-    @include respond-to('desktop') {
-      padding: toRem(38) toRem(54) toRem(46);
-      width: 50%;
+    @include respond-to('tablet') {
       border-radius: toRem(32);
+    }
+
+    @include respond-to('desktop') {
+      gap: toRem(28);
+      padding: toRem(38) toRem(54) toRem(46);
     }
   }
 
@@ -39,12 +39,6 @@
     @include respond-to('desktop') {
       margin-bottom: toRem(14);
       font-size: $font-size-extra-large;
-    }
-  }
-
-  &__summary {
-    @include respond-to('desktop') {
-      width: 50%;
     }
   }
 }

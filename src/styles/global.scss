@@ -12,11 +12,19 @@ body {
   color: $color-dark-gray-blue;
   background-color: $color-pale-blue;
 
+  @include respond-to('tablet') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
   @include respond-to('desktop') {
     font-size: $font-size-default-desktop;
   }
 }
 
+h1,
 h2 {
   font: {
     size: $font-size-medium;

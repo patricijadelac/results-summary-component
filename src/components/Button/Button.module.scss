@@ -5,12 +5,12 @@
     weight: $font-weight-bold;
   }
   color: $color-white;
-  background-color: $color-dark-gray-blue;
+  background: $color-dark-gray-blue;
   border-radius: toRem(128);
   border: 0;
+  cursor: pointer;
 
   &:hover {
     background: $gradient-background;
-    cursor: pointer;
   }
 }

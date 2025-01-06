@@ -11,7 +11,7 @@ export default function ResultsSummary({
   return (
     <div className={styles.resultsSummary}>
       <div className={styles.resultsSummary__result}>
-        <h2>Your Result</h2>
+        <h1>Your Result</h1>
         <ScoreCircle score={result} />
         <div>
           <span className={styles.resultsSummary__bold}>Great</span>
